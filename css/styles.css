@@ -113,6 +113,7 @@ body {
     background-color: #f4f1e8;
 }
 
+/* header start */
 .header {
     background-color: #7f5539;
     height: 90px;
@@ -126,9 +127,180 @@ body {
 }
 
 .logo {
-    height: 100px;
+    position: absolute;
+    left: 3%;
+    height: 110px;
     width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    position: absolute;
+    left: 10%;
+    width: 55%
+}
+
+.header-left nav {
+    width: 100%;
+}
+
+.header-left ul {
+    display: flex;
+    gap: 3rem;
+    margin-left: 2rem;
+    align-items: center;
+    height: 100px;
+    list-style: none;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.header-left a:hover {
+    text-decoration: underline;
+}
+
+.header-right {
+    position: absolute;
+    left: 80%;
+    width: 55%
+}
+
+.header-right nav {
+    width: 100%;
+}
+
+.header-right ul {
+    display: flex;
+    gap: 3rem;
+    margin-left: 2rem;
+    align-items: center;
+    height: 100px;
+    list-style: none;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+/* header end */
+
+/* first homepage start */
+.teaser {
+    margin-top: 90px;
+    margin-left: 35px;
+    width: 95%;
+    height: 605px;
+}
+
+.welcome {
+    margin-top: 40px;
+    margin-left: 35px;
+    float: right;
+    height: 88%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.welcome h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+#p1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#p2 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.welcome a {
+    color: #f4f1e8;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 38%;
+    height: 50px;
+    width: 190px;
+    border: 1px solid #7f5539;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #7f5539;
+}
+
+/* first homepage end */
+
+.testimonial {
+    margin-top: 90px;
+    margin-left: 35px;
+    width: 95%;
+    height: 605px;
+}
+
+.testimonial p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #7f5539;
+    font-size: 30px;
+    position: relative;
+    left: 10%;
+    top: 280px;
+    display: flex;
+}
+
+.top-frame {
+    width: 10%;
+    height: 30%;
+}
+
+.bottom-frame {
+    width: 60%;
+    height: 40%;
+}
+
+.testimonial a {
+    color: #f4f1e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    top: 70%;
+    height: 50px;
+    width: 190px;
+    border: 1px solid #7f5539;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #7f5539;
 }
