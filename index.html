@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Brent</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Logo</div>
+                <div class="logo">
+                    <img src="CSS/img/Logo_transp.png" alt="Logo">
+                </div>
                 <div class="nav-left">
-                    <a href="#homepage" class="home">Home</a>
+                    <a href="#homepage">Home</a>
                     <a href="#menu">Menu</a>
                     <a href="#gallery">Gallery</a>
                 </div>
@@ -28,21 +30,22 @@
     </header>
     <div id="homepage" class="page">
         <div class="container">
-            <section class="hero">
-                <h1>Welcome to Coffee Brent</h1>
-                <img src="https://via.placeholder.com/800x400?text=Coffee+Cart" alt="Coffee Cart">
-                <p>From a small cart in Pasig to your favorite sip—explore our story, menu, and community.</p>
-                <button class="cta-button">Explore Menu</button>
+            <section class="story">
+                <h1>Welcome!</h1>
+                <img src="" alt="Coffee Cart">
+                <p>From a small cart in Pasig to your favorite sip! Explore our story, menu, and community.</p>
+                <button><a href="#menu">Menu</a></button>
             </section>
             <section class="highlights">
-                <div class="highlight">
+                <div class="favorite">
                     <h3>Highlighted Drink: Iced Coffee</h3>
                     <p>Refreshing and classic. ₱80</p>
                 </div>
-                <div class="highlight">
+                <div class="deals">
                     <h3>Highlighted Drink: Hot Coffee</h3>
                     <p>Comforting brew. ₱70</p>
                 </div>
+                <button class="cta-button">Buy Now!</button>
             </section>
             <section class="testimonials">
                 <h2>Testimonials Preview</h2>
@@ -51,13 +54,115 @@
             </section>
         </div>
     </div>
-    <footer>
+    <div id="menu" class="page">
         <div class="container">
-            <p>&copy; 2025 Coffee Brent. All rights reserved.</p>
-            <a href="https://www.facebook.com/share/1Eet3nesjB/">Facebook</a> | <a href="coffee.brent">Instagram</a> |
-            <a href="coffeebrent.events">TikTok</a>
+            <h1>Our Menu</h1>
+            <button><a href="#specials">Specials</a></button>
+            <div class="Hot Brew">
+                <img src="" alt="Warm Coffee">
+                <div>
+                    <h3>Warm Coffee</h3>
+                    <p>Comforting brew for any time. ₱70</p>
+                </div>
+            </div>
+            <div class="Cold Brew">
+                <img src="" alt="Iced Coffee">
+                <div>
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing classic with a cool twist. ₱80</p>
+                </div>
+            </div>
+            <button class="cta-button">Buy Now!</button>
         </div>
-    </footer>
+    </div>
+    <div id="specials" class="page">
+        <div class="container">
+            <h1>Seasonal Specials & Promotions</h1>
+            <div class="special-item">
+                <img src="" alt="best">
+                <h2>Buy One, Get One Free on Iced Coffees</h2>
+                <p>Valid until month end.</p>
+                <button class="cta-button">Claim Offer</button>
+            </div>
+        </div>
+        <div id="gallery" class="page">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="gallery">
+                    <img src="" alt="pics">
+                </div>
+                <button><a href="#customer-photos">Customer Photos</a></button>
+            </div>
+        </div>
+        <div id="customer-photos" class="page">
+            <div class="container">
+                <h1>Customer Photos</h1>
+                <p>Smiles and moments from our community!</p>
+                <div class="photos">
+                    <img src="" alt="pics">
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="page">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong>0921 922 0797</p>
+                    <p><strong>Email:</strong>coffeebrent.events@gmail.com</p>
+                    <p><strong>Social Media:</strong> Follow us on Facebook, Instagram, and Tiktok</p>
+                    <button><a href="#location-map">Location & Map</a></button>
+                    <button><a href="#inquiry-form">Send Inquiry</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="inquiry-form" class="page">
+            <div class="container">
+                <h1>Inquiry Form</h1>
+                <div class="form">
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message (e.g., event booking, custom order)" rows="5"
+                            required></textarea>
+                        <button class="cta-button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="location-map" class="page">
+            <div class="container">
+                <h1>Location & Map</h1>
+                <div class="map">
+                    <p><strong>Address:</strong> Pasig, Philippines</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.123456789!2d121.123456!3d14.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM0JzA0LjQiTiAxMjHCsDA3JzI0LjQiRQ!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="page">
+            <div class="container">
+                <h1>About Us</h1>
+                <div class="about">
+                    <p>Coffee Brent began with a love for coffee and resilience. Starting as a small cart in Pasig, we
+                        serve
+                        comforting classics and signature brews to create moments of joy.</p>
+                    <p><strong>Our Mission:</strong> Provide mobile specialty coffee to the community.</p>
+                    <p><strong>Values:</strong> Passion, connection, and quality.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Coffee Brent | All rights reserved</p>
+                <a href="https://www.facebook.com/share/1Eet3nesjB/"><img src="CSS/img/Facebook_icon.png"
+                        alt="Facebook"></a> <a
+                    href="https://www.instagram.com/coffee.brent?igsh=MTB2ejQwdDBoaGR2Ng=="><img
+                        src="CSS/img/Instagram_icon.png" alt="Instagram"></a> <a
+                    href="https://vm.tiktok.com/ZSHcEp85X3ckJ-pfkrs/"><img src="CSS/img/Tiktok_icon.png"
+                        alt="Tiktok"></a>
+            </div>
+        </footer>
 </body>
 
 </html>

@@ -9,22 +9,16 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: auto;
+    padding: 10px;
 }
 
 header {
-    background-color: #8b4513;
+    background-color: #7f5539;
 }
 
 header a:hover {
     text-decoration: underline;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
 }
 
 nav {
@@ -32,17 +26,20 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    /* increased header height */
 }
 
-/* Logo on the left */
 .logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
+    position: relative;
+    top: 10px;
+    left: 0;
+    bottom: 10px;
 }
 
-/* Left side nav (Home, Menu, Gallery) */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
 .nav-left {
     display: flex;
     gap: 2rem;
@@ -56,7 +53,6 @@ nav {
     font-size: 1rem;
 }
 
-/* Right side nav (Contact, About) */
 .nav-right {
     display: flex;
     gap: 2rem;
@@ -70,51 +66,22 @@ nav {
     font-size: 1rem;
 }
 
-/* Responsive adjustment for smaller screens */
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .nav-left,
-    .nav-right {
-        margin: 0;
-        padding: 0.5rem 0;
-    }
-
-    .container {
-        padding: 0 1rem;
-    }
-}
-
 footer {
-    background-color: #8b4513;
+    background-color: #7f5539;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem;
 }
 
 footer a {
-    color: white;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    transition: opacity 0.3s;
 }
 
 footer a:hover {
-    text-decoration: underline;
-}
-
-.page {
-    min-height: 100vh;
-    padding-top: 80px;
-    display: none;
-}
-
-.page:target {
-    display: block;
-}
-
-#homepage {
-    display: block;
+    opacity: 0.7;
 }
