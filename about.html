@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee Brent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: white;
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            height: 70px;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        .logo img {
+            display: none; /* Hide logo image to show text logo */
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-left a, .nav-right a {
+            color: black;
+            font-weight: 400;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-left a:hover, .nav-right a:hover, .nav-left a.active {
+            border-bottom-color: black;
+        }
+
+        .search-bar {
+            display: none;
+        }
+
+        .page {
+            min-height: 100vh;
+            padding-top: 80px;
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        #homepage .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 3rem;
+        }
+
+        .story {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .story .image-placeholder {
+            background-color: #ddd;
+            border-radius: 16px;
+            width: 50%;
+            height: 300px;
+        }
+
+        .story .text-block {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            font-size: 1.2rem;
+            align-items: flex-start;
+            color: black;
+        }
+
+        .story .text-block p {
+            margin: 0;
+        }
+
+        .cta-button {
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 26px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #bbb;
+        }
+
+        footer {
+            background-color: white;
+            border-top: 1px solid black;
+            padding: 15px 20px;
+            font-size: 0.8rem;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        footer p {
+            flex-basis: 100%;
+            margin: 0;
+        }
+
+        footer a img {
+            width: 14px;
+            height: 14px;
+            filter: grayscale(100%);
+            cursor: pointer;
+            transition: filter 0.3s ease;
+        }
+
+        footer a:hover img {
+            filter: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                height: auto;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .nav-left,
+            .nav-right {
+                margin: 0;
+                padding: 0.5rem 0;
+                gap: 15px;
+            }
+
+            #homepage .container {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 40px;
+            }
+
+            .story {
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+            }
+
+            .story .image-placeholder,
+            .story .text-block {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
+
+            .story .text-block p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Logo</div>
+                <div class="nav-left">
+                    <a href="#homepage">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="nav-right">
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="homepage" class="page active">
+        <div class="container">
+            <section class="story">
+                <div class="image-placeholder" aria-label="Image placeholder"></div>
+                <div class="text-block">
+                    <p>A teaser of the story.</p>
+                    <a href="#menu" class="cta-button">See our Menu</a>
+                </div>
+            </section>
+
+            <section class="highlights">
+                <div class="favorite">
+                    <h3>Highlighted Drink: Iced Coffee</h3>
+                    <p>Refreshing and classic. ₱80</p>
+                </div>
+                <div class="deals">
+                    <h3>Highlighted Drink: Hot Coffee</h3>
+                    <p>Comforting brew. ₱70</p>
+                </div>
+                <button class="cta-button">Buy Now!</button>
+            </section>
+
+            <section class="testimonials">
+                <h2>Testimonials Preview</h2>
+                <p>"Every cup feels like home!" - Happy Customer</p>
+                <a href="#about" class="cta-button">Read More</a>
+            </section>
+        </div>
+    </div>
+
+    <div id="menu" class="page">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <a href="#specials" class="cta-button">Specials</a>
+            <div class="Hot Brew">
+                <img src="" alt="Warm Coffee" />
+                <div>
+                    <h3>Warm Coffee</h3>
+                    <p>Comforting brew for any time. ₱70</p>
+                </div>
+            </div>
+            <div class="Cold Brew">
+                <img src="" alt="Iced Coffee" />
+                <div>
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing classic with a cool twist. ₱80</p>
+                </div>
+            </div>
+            <button class="cta-button">Buy Now!</button>
+        </div>
+    </div>
+
+    <div id="specials" class="page">
+        <div class="container">
+            <h1>Seasonal Specials & Promotions</h1>
+            <div class="special-item">
+                <img src="" alt="best" />
+                <h2>Buy One, Get One Free on Iced Coffees</h2>
+                <p>Valid until month end.</p>
+                <button class="cta-button">Claim Offer</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="page">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="" alt="pics" />
+            </div>
+            <a href="#customer-photos" class="cta-button">Customer Photos</a>
+        </div>
+    </div>
+
+    <div id="customer-photos" class="page">
+        <div class="container">
+            <h1>Customer Photos</h1>
+            <p>Smiles and moments from our community!</p>
+            <div class="photos">
+                <img src="" alt="pics" />
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 0921 922 0797</p>
+                <p><strong>Email:</strong> coffeebrent.events@gmail.com</p>
+                <p><strong>Social Media:</strong> Follow us on Facebook, Instagram, and Tiktok</p>
+                <a href="#location-map" class="cta-button">Location & Map</a>
+                <a href="#inquiry-form" class="cta-button">Send Inquiry</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="inquiry-form" class="page">
+        <div class="container">
+            <h1>Inquiry Form</h1>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea placeholder="Message (e.g., event booking, custom order)" rows="5" required></textarea>
+                    <button class="cta-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="location-map" class="page">
+        <div class="container">
+            <h1>Location & Map</h1>
+            <div class="map">
+                <p><strong>Address:</strong> Pasig, Philippines</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.123456789!2d121.123456!3d14.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM0JzA0LjQiTiAxMjHCsDA3JzI0LjQiRQ!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="container">
+            <h1>About Us</h1>
+            <div class="about">
+                <p>Coffee Brent began with a love for coffee and resilience. Starting as a small cart in Pasig, we serve comforting classics and signature brews to create moments of joy.</p>
+                <p><strong>Our Mission:</strong> Provide mobile specialty coffee to the community.</p>
+                <p><strong>Values:</strong> Passion, connection, and quality.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Coffee Brent | All rights reserved</p>
+            <a href="https://www.facebook.com/share/1Eet3nesjB/" aria-label="Facebook"><img src="CSS/img/Facebook_icon.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/coffee.brent?igsh=MTB2ejQwdDBoaGR2Ng==" aria-label="Instagram"><img src="CSS/img/Instagram_icon.png" alt="Instagram" /></a>
+            <a href="https://vm.tiktok.com/ZSHcEp85X3ckJ-pfkrs/" aria-label="Tiktok"><img src="CSS/img/Tiktok_icon.png" alt="Tiktok" /></a>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1) || 'homepage';
+            showPage(hash);
+        });
+
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                showPage(hash);
+            }
+        });
+    </script>
+</body>
+</html>

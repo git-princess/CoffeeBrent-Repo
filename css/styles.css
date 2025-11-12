@@ -200,7 +200,7 @@ body {
 /* first homepage start */
 .teaser {
     margin-top: 90px;
-    margin-left: 35px;
+    margin-left: 80px;
     width: 95%;
     height: 605px;
 }
@@ -258,13 +258,12 @@ body {
     font-size: 20px;
     background-color: #7f5539;
 }
-
 /* first homepage end */
 
 .testimonial {
     margin-top: 90px;
-    margin-left: 35px;
-    width: 95%;
+    margin-left: 80px;
+    width: 85%;
     height: 605px;
 }
 
