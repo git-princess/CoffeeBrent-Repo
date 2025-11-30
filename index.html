@@ -1,27 +1,20 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Brent</title>
-    <link rel="stylesheet" href="C:\Users\Meowy\Documents\𓆩 GitHub 𓆪\CoffeeBrent-Repo\css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-    
     <header>
         <div class="container">
             <nav>
-
-                
                 <div class="logo">
                     <img src="CSS/img/Logo_transp.png" alt="Logo">
                 </div>
-                
-
-                
                 <div class="nav-left">
                     <a href="#homepage">Home</a>
                     <a href="#menu">Menu</a>
@@ -32,239 +25,832 @@
                     <a href="#contact">Contact</a>
                     <a href="#about">About</a>
                 </div>
-                
-
             </nav>
         </div>
     </header>
-    
-
-    <div id="homepage" class="page">
-        <div class="container">
-
-            
-            <section class="story">
-                <h1>Welcome!</h1>
-                <div class="story-img"> <img
-                        src="C:\Users\Meowy\Documents\𓆩 GitHub 𓆪\CoffeeBrent-Repo\css\IMG\cf3r.jpeg"
-                        alt="Coffee Cart"> </div>
-                <div class="story-des">
-                    <p>From a small cart in Pasig to your favorite sip! Explore our story, menu, and community.</p>
-                </div>
-                <button><a href="#menu">Menu</a></button>
-            </section>
-            
-
-            
-            <section class="highlights">
-                <div class="favorite">
-                    <h3>Highlighted Drink: Iced Coffee</h3>
-                    <p>Refreshing and classic. ₱80</p>
-                </div>
-                <div class="deals">
-                    <h3>Highlighted Drink: Hot Coffee</h3>
-                    <p>Comforting brew. ₱70</p>
-                </div>
-                <button class="cta-button">Buy Now!</button>
-            </section>
-            
-
-            
-            <section class="testimonials">
-                <h2>Testimonials Preview</h2>
-                <p>"Every cup feels like home!" - Happy Customer</p>
-                <button class="cta-button">Read More</button>
-            </section>
-            
-
-        </div>
-    </div>
     <div id="menu" class="page">
         <div class="container">
-            <h1>Our Menu</h1>
-            <button><a href="#specials">Specials</a></button>
-            <div class="Hot Brew">
-                <img src="" alt="Warm Coffee">
-                <div>
-                    <h3>Warm Coffee</h3>
-                    <p>Comforting brew for any time. ₱70</p>
+            <section class="ads">
+                <div class="ads-left">
+                    <h1>Our Menu</h1>
+                    <a href="#specials" class="cta-button">Specials</a>
                 </div>
-            </div>
-            <div class="Cold Brew">
-                <img src="" alt="Iced Coffee">
-                <div>
-                    <h3>Iced Coffee</h3>
-                    <p>Refreshing classic with a cool twist. ₱80</p>
+                <div class="ads-right">
+                    <img src="">
                 </div>
-            </div>
-            <button class="cta-button">Buy Now!</button>
+            </section>
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Hot Coffee</h2>
+                </div>
+                <div class="product-grid">
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/americano.jpg">
+                            <h4>Americano</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredient:
+                                <ul>
+                                    <li>Espresso</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-hcano" class="size-input">
+                                    <label for="s-hcano" class="size-button">S</label>
+                                    <div class="price">4oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-hcano" class="size-input">
+                                    <label for="m-hcano" class="size-button">M</label>
+                                    <div class="price">8oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-hcano" class="size-input">
+                                    <label for="l-hcano" class="size-button">L</label>
+                                    <div class="price">12oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/cafe latte.jpg">
+                            <h4>Cafe Latte</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Steamed milk</li>
+                                    <li>Milk foam</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-hlatte" class="size-input">
+                                    <label for="s-hlatte" class="size-button">S</label>
+                                    <div class="price">4oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-hlatte" class="size-input">
+                                    <label for="m-hlatte" class="size-button">M</label>
+                                    <div class="price">8oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-hlatte" class="size-input">
+                                    <label for="l-hlatte" class="size-button">L</label>
+                                    <div class="price">12oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/capuccino.jpg">
+                            <h4>Cappuccino</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Steamed milk</li>
+                                    <li>Milk foam</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-cap" class="size-input">
+                                    <label for="s-cap" class="size-button">S</label>
+                                    <div class="price">4oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-cap" class="size-input">
+                                    <label for="m-cap" class="size-button">M</label>
+                                    <div class="price">8oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-cap" class="size-input">
+                                    <label for="l-cap" class="size-button">L</label>
+                                    <div class="price">12oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Iced Coffee</h2>
+                </div>
+                <div class="product-grid">
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/Iced americano.jpg">
+                            <h4>Americano</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Ice</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-icano" class="size-input">
+                                    <label for="s-icano" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-icano" class="size-input">
+                                    <label for="m-icano" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-icano" class="size-input">
+                                    <label for="l-icano" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/iced latte.jpg">
+                            <h4>Cafe Latte</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Steamed milk</li>
+                                    <li>Milk foam</li>
+                                    <li>Ice</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-ilatte" class="size-input">
+                                    <label for="s-ilatte" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-ilatte" class="size-input">
+                                    <label for="m-ilatte" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-ilatte" class="size-input">
+                                    <label for="l-ilatte" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/mocha.jpg">
+                            <h4>Mocha</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Milk</li>
+                                    <li>Chocolate syrup</li>
+                                    <li>Whipped cream</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-mocha" class="size-input">
+                                    <label for="s-mocha" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-mocha" class="size-input">
+                                    <label for="m-mocha" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-mocha" class="size-input">
+                                    <label for="l-mocha" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/salted caramel.jpg">
+                            <h4>Salted Caramel</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Heavy cream</li>
+                                    <li>Milk</li>
+                                    <li>Caramel syrup</li>
+                                    <li>Salt</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-sc" class="size-input">
+                                    <label for="s-sc" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-sc" class="size-input">
+                                    <label for="m-sc" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-sc" class="size-input">
+                                    <label for="l-sc" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/white chocolate mocha.jpg">
+                            <h4>White Chocolate<br>Mocha</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Milk</li>
+                                    <li>White chocolate syrup</li>
+                                    <li>Whipped cream</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-wcm" class="size-input">
+                                    <label for="s-wcm" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-wcm" class="size-input">
+                                    <label for="m-wcm" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-wcm" class="size-input">
+                                    <label for="l-wcm" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/Spanish latte.jpg">
+                            <h4>Spanish Latte</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Sweetened condensed milk</li>
+                                    <li>Milk</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-spanish" class="size-input">
+                                    <label for="s-spanish" class="size-button">S</label>
+                                    <div class="price">8oz: ₱89</div>
+
+                                    <input type="radio" name="size" id="m-spanish" class="size-input">
+                                    <label for="m-spanish" class="size-button">M</label>
+                                    <div class="price">12oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="l-spanish" class="size-input">
+                                    <label for="l-spanish" class="size-button">L</label>
+                                    <div class="price">16oz: ₱109</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/caramel macchiato_.jpg">
+                            <h4>Caramel Macchiato</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Steamed milk</li>
+                                    <li>Vanilla syrup</li>
+                                    <li>Caramel syrup</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-cm" class="size-input">
+                                    <label for="s-cm" class="size-button">S</label>
+                                    <div class="price">8oz: ₱99</div>
+
+                                    <input type="radio" name="size" id="m-cm" class="size-input">
+                                    <label for="m-cm" class="size-button">M</label>
+                                    <div class="price">12oz: ₱109</div>
+
+                                    <input type="radio" name="size" id="l-cm" class="size-input">
+                                    <label for="l-cm" class="size-button">L</label>
+                                    <div class="price">16oz: ₱119</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Non-Coffee</h2>
+                </div>
+                <div class="product-grid">
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/ncmatcha.jpg">
+                            <h4>Matcha</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Matcha powder</li>
+                                    <li>Milk</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-matcha" class="size-input">
+                                    <label for="s-matcha" class="size-button">S</label>
+                                    <div class="price">10oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-matcha" class="size-input">
+                                    <label for="m-matcha" class="size-button">M</label>
+                                    <div class="price">16oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-matcha" class="size-input">
+                                    <label for="l-matcha" class="size-button">L</label>
+                                    <div class="price">22oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/ncberry_.jpg">
+                            <h4>Strawberry</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Strawberry powder</li>
+                                    <li>Milk</li>
+                                    <li>Yogurt</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-berry" class="size-input">
+                                    <label for="s-berry" class="size-button">S</label>
+                                    <div class="price">10oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-berry" class="size-input">
+                                    <label for="m-berry" class="size-button">M</label>
+                                    <div class="price">16oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-berry" class="size-input">
+                                    <label for="l-berry" class="size-button">L</label>
+                                    <div class="price">22oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="CSS/img/ncchoco.jpg">
+                            <h4>Chocolate</h4>
+                        </div>
+                        <div class="description-overlay">
+                            <div class="ingredients">
+                                Key Ingredients:
+                                <ul>
+                                    <li>Chocolate syrup</li>
+                                    <li>Cocoa Powder</li>
+                                    <li>Milk</li>
+                                    <li>Whipped cream</li>
+                                </ul>
+                            </div>
+                            <div class="card-meta">
+                                <div class="size-options">
+                                    <input type="radio" name="size" id="s-choco" class="size-input">
+                                    <label for="s-choco" class="size-button">S</label>
+                                    <div class="price">10oz: ₱69</div>
+
+                                    <input type="radio" name="size" id="m-choco" class="size-input">
+                                    <label for="m-choco" class="size-button">M</label>
+                                    <div class="price">16oz: ₱79</div>
+
+                                    <input type="radio" name="size" id="l-choco" class="size-input">
+                                    <label for="l-choco" class="size-button">L</label>
+                                    <div class="price">22oz: ₱89</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
     </div>
     <div id="specials" class="page">
         <div class="container">
-            <h1>Seasonal Specials & Promotions</h1>
-            <div class="special-item">
-                <img src="" alt="best">
-                <h2>Buy One, Get One Free on Iced Coffees</h2>
-                <p>Valid until month end.</p>
-                <button class="cta-button">Claim Offer</button>
-            </div>
-        </div>
-        <div id="gallery" class="page">
-            <div class="container">
-                <h1>Gallery</h1>
-                <div class="gallery">
-                    <img src="" alt="pics">
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Specials</h2>
                 </div>
-                <button><a href="#customer-photos">Customer Photos</a></button>
-            </div>
-        </div>
-        <div id="customer-photos" class="page">
-            <div class="container">
-                <h1>Customer Photos</h1>
-                <p>Smiles and moments from our community!</p>
-                <div class="photos">
-                    <img src="" alt="pics">
+                <div class="product-grid">
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Pistachio Frappe</h3>
+                            <div class="card-meta">
+                                <span class="price">120 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Matcha Frappe</h3>
+                            <div class="card-meta">
+                                <span class="price">120 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Matcha Overload Frappe</h3>
+                            <div class="card-meta">
+                                <span class="price">125 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Classic Mocha Frappe</h3>
+                            <div class="card-meta">
+                                <span class="price">125 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Espresso Brownies</h3>
+                            <div class="card-meta">
+                                <span class="price">150 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>vanilla cream</h3>
+                            <div class="card-meta">
+                                <span class="price">150 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Mango yogurt-cheesecake</h3>
+                            <div class="card-meta">
+                                <span class="price">150 PHP</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="">
+                        <div class="card-body">
+                            <h3>Chocolate chip-cheesecake</h3>
+                            <div class="card-meta">
+                                <span class="price">150 PHP</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
-        <div id="contact" class="page">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <div class="contact-info">
-                    <p><strong>Phone:</strong>0921 922 0797</p>
-                    <p><strong>Email:</strong>coffeebrent.events@gmail.com</p>
-                    <p><strong>Social Media:</strong> Follow us on Facebook, Instagram, and Tiktok</p>
-                    <button><a href="#location-map">Location & Map</a></button>
-                    <button><a href="#inquiry-form">Send Inquiry</a></button>
+            </section>
+            <section class="promo-section">
+                <div class="wrap">
+                    <article class="voucher">
+                        <div class="content">
+                            <h1>COFFEE<br>VOUCHER</h1>
+                            <p class="valid">VALID UNTIL December 25, 2025</p>
+                            <span class="discount">DISCOUNT 50% OFF</span>
+                            <div class="meta small-site">www.Coffee Brent.com</div>
+                        </div>
+                    </article>
+
+                    <article class="voucher reverse">
+                        <div class="content">
+                            <h1>COFFEE<br>VOUCHER</h1>
+                            <p class="valid"><strong>PISTACHIO FRAPPE</strong></p>
+                            <p class="valid">VALID UNTIL December 25, 2025</p>
+                            <span class="discount"> BUY 1 TAKE 1</span>
+                            <div class="meta small-site">www.Coffee Brent.com</div>
+                        </div>
+                    </article>
+
+                    <article class="voucher">
+                        <div class="content">
+                            <h1>PROMO<br>CODE</h1>
+                            <p class="valid">VALID UNTIL December 25, 2025</p>
+                            <p class="valid"><strong>ELIBRENT2025</strong></p>
+                            <span class="discount">DISCOUNT 25% OFF</span>
+                            <div class="meta small-site">www.Coffee Brent.com</div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
-        <div id="inquiry-form" class="page">
-            <div class="container">
-                <h1>Inquiry Form</h1>
-                <div class="form">
-                    <form>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Message (e.g., event booking, custom order)" rows="5"
-                            required></textarea>
-                        <button class="cta-button" type="submit">Submit</button>
-                    </form>
+            </section>
+            <section>
+                <div class="container">
+                    <h1>Coffee Brent – Coffee Bar Rates</h1>
+
+                    <p class="description">
+                        This section showcases the official pricing packages of Coffee Brent for mobile coffee bar
+                        services.
+                        It includes the available cup bundles, inclusions, and service features that customers receive
+                        when booking the coffee cart for events.
+                    </p>
+                    <img class="rate-image" src="CSS/img/Coffee Cart.jpg" alt="Coffee Brent Rate Card">
                 </div>
-            </div>
-        </div>
-        <div id="location-map" class="page">
-            <div class="container">
-                <h1>Location & Map</h1>
-                <div class="map">
-                    <p><strong>Address:</strong> Pasig, Philippines</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.123456789!2d121.123456!3d14.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM0JzA0LjQiTiAxMjHCsDA3JzI0LjQiRQ!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <div id="about" class="page">
-            <div class="container">
-                <h1>About Us</h1>
-                <div class="about">
-                    <p>Coffee Brent began with a love for coffee and resilience. Starting as a small cart in Pasig, we
-                        serve
-                        comforting classics and signature brews to create moments of joy.</p>
-                    <p><strong>Our Mission:</strong> Provide mobile specialty coffee to the community.</p>
-                    <p><strong>Values:</strong> Passion, connection, and quality.</p>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 Coffee Brent | All rights reserved</p>
-                <a href="https://www.facebook.com/share/1Eet3nesjB/"><img src="CSS/img/Facebook_icon.png"
-                        alt="Facebook"></a> <a
-                    href="https://www.instagram.com/coffee.brent?igsh=MTB2ejQwdDBoaGR2Ng=="><img
-                        src="CSS/img/Instagram_icon.png" alt="Instagram"></a> <a
-                    href="https://vm.tiktok.com/ZSHcEp85X3ckJ-pfkrs/"><img src="CSS/img/Tiktok_icon.png"
-                        alt="Tiktok"></a>
-            </div>
-        </footer>
-</body>
-
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Brent</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-    <!-- header start  -->
-    <div class="header">
-
-        <div class="logo">
-            <img src="css/IMG/Logo_transp.png"
-                style="width: 110px; height: 110px; margin-right: 10px; border-radius:50px;">
-        </div>
-
-        <div class="header-left">
-            <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a> </li>
-                    <li> <a href="menu.html">Menu</a> </li>
-                    <li> <a href="gallery.html">Gallery</a> </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li> <a href="contact.html">Contact</a> </li>
-                    <li> <a href="about.html">About</a> </li>
-                </ul>
-            </nav>
-        </div>
-
-    </div>
-    <!-- header end  -->
-
-    <!-- first homepage section start  -->
-    <div class="teaser">
-        <div class="welcome">
-            <h3>Welcome to</h3>
-            <p id="p1">Coffee Brent!</p>
-            <p id="p2">From a small cart in Pasig to your favorite sip!<br>Explore our story, menu, and community.</p>
-            <a href="menu.html">See our Menu</a>
-        </div>
-        <div class="teaser-img">
-            <img src="css/IMG/cf3r.jpeg" style="width: 35%; height: 35%; float: left; margin-top: 40px;">
+            </section>
         </div>
     </div>
-    <!-- first hompage section end  -->
+    <div id="gallery" class="page">
+        <div class="container">
+            <div class="gallery_container">
+                <!-- <a href="#customer-photos" class="cta-button">Customer Photos</a> -->
+            </div>
+            <div class="gallery2">
+                <div class="milk-set">
+                    <img src="css/img/milk.png">
+                </div>
+                <div class="frame-set">
+                    <img src="css/img/galleryleft.png" class="leftframe">
+                    <img src="css/img/galleryright.png" class="rightframe">
+                </div>
+                <div class="cup-set">
+                    <img src="css/img/leftcup.png" class="leftcup">
+                    <img src="css/img/rightcup.png" class="rightcup">
+                </div>
+                <div class="description-set">
+                    <p class="leftdesc">"Minsan yung akala mong impossible,<br>Pwede pala talagang maging possible"</p>
+                    <p class="rightdesc">Simpleng litrato, pero punong puno ng<br>pangarap at saya! Salamat po at
+                        nagkaroon<br>ng kulay yung
+                        dating pangarap ko lang</p>
+                </div>
+                <div class="tv-set">
+                    <video autoplay muted loop class="video">
+                        <source src="css/vid/fbvid.mp4" type="video/mp4">
+                    </video>
+                    <img src="css/img/tv.png" class="tvimg">
+                    <img src="css/img/tynote.png" class="tynote">
+                </div>
+            </div>
+            <div class="gallery3">
+                <div class="leaves-set">
+                    <img src="css/img/leavesss.png">
+                </div>
+                <div class="descriptiontxt">
+                    <p>River, kailangan ng kape<br>para magising!</p>
+                </div>
+                <div class="descriptiontxt2">
+                    <p>3rd Coffee Cart Event |<br>100cups Done | Birthday<br>Event | Coffee Brent<br>F
+                        Quezon City Sports Club.</p>
+                </div>
+                <div class="collage1">
+                    <img src="css/img/ssss.png">
+                </div>
+                <div class="coffeebeen-set">
+                    <img src="css/img/coffeebeen.png">
+                </div>
+                <div class="coffeebeen-set2">
+                    <img src="css/img/coffeebeen.png">
+                </div>
+                <div class="paper-set">
+                    <img src="css/img/paper.png">
+                </div>
+            </div>
+            <div class="gallery4">
+                <div class="collage2">
+                    <img src="css/img/collage2.png">
+                </div>
+                <div class="descriptiontxt3">
+                    <p>1st Coffee Cart<br>Event | 50cups Done<br>| Birthday Event |<br>Coffee Brent</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="customer-photos" class="page">
+        <div class="container">
+            <div class="gallery-wrap">
+                <div class="grid">
+                    <figure class="item tall" aria-labelledby="label-cart">
+                        <figcaption id="label-cart">Cart Setup</figcaption>
+                        <div class="placeholder" role="img" aria-label="Cart Setup image placeholder"></div>
+                    </figure>
 
-    <div class="testimonial">
-        <p>"Every cup feels like home!" - Happy Customer</p>
-        <a href="about.html">See our Story</a>
-        <div class="testimonial-img">
-            <img src="css/IMG/c5.png"
-                style="width: 25%; height: 25%; float: right; margin-top: 100px; margin-right: 10px; display: flex;">
+                    <div class="middle-col">
+                        <figure class="item wide" aria-labelledby="label-signature">
+                            <figcaption id="label-signature">Signature Drinks</figcaption>
+                            <div class="placeholder" role="img" aria-label="Signature Drinks image placeholder"></div>
+                        </figure>
+
+                        <figure class="item wide" aria-labelledby="label-moments">
+                            <figcaption id="label-moments">Moments from Events</figcaption>
+                            <div class="placeholder" role="img" aria-label="Moments from Events image placeholder">
+                            </div>
+                        </figure>
+                    </div>
+
+                    <figure class="item tall" aria-labelledby="label-behind">
+                        <figcaption id="label-behind">Behind the Scenes</figcaption>
+                        <div class="placeholder" role="img" aria-label="Behind the Scenes image placeholder"></div>
+                    </figure>
+                </div>
+            </div>
         </div>
-        <div class="top-frame">
-            <img src="css/IMG/c4rb.png" style="width: 50px; height: 50px; transform: rotate(90deg);">
+    </div>
+    <div id="contact" class="page">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p><strong>Phone:</strong>0921 922 0797</p>
+                <p><strong>Email:</strong>coffeebrent.events@gmail.com</p>
+                <p><strong>Social Media:</strong> Follow us on Facebook, Instagram, and Tiktok</p>
+                <a href="#location-map" class="cta-button">Location & Map</a>
+                <a href="#inquiry-form" class="cta-button">Send Inquiry</a>
+            </div>
         </div>
-        <div class="bottom-frame">
-            <img src="css/IMG/c4rb.png"
-                style="width: 50px; height: 50px; transform: rotate(0.75turn); position: relative; top: 100%; left: 100%;">
+    </div>
+    <div id="inquiry-form" class="page">
+        <div class="container">
+            <h1>Inquiry Form</h1>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message (e.g., event booking, custom order)" rows="5" required></textarea>
+                    <button class="cta-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="location-map" class="page">
+        <div class="container">
+            <h1>Location & Map</h1>
+            <div class="map">
+                <p><strong>Address:</strong> Pasig, Philippines</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.123456789!2d121.123456!3d14.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM0JzA0LjQiTiAxMjHCsDA3JzI0LjQiRQ!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="page">
+        <div class="coffee-about">
+            <div class="coffee-overlay">
+                <div class="coffee-text-big">
+                    We put the<br>spotlight<br>on Coffee Brent
+                </div>
+                <div class="coffee-content">
+                    <div class="hero-right">
+                        <p>
+                            Every cup brewed today reflects Elaine’s heart — supporting local communities,
+                            creating meaningful moments, and reminding people to slow down and savor something real.
+                        </p>
+                        <img src="CSS/img/CART.jpg" class="coffee-img">
+                    </div>
+                    <div class="hero-left">
+                        <img src="CSS/img/shots.jpg" class="coffee-img">
+                        <p>
+                            Coffee Brent began with Elaine Bautista’s simple dream and deep love for coffee.
+                            What started as a small cart in Pasig City has grown into a warm community space
+                            built on passion, sincerity, and stories shared over a fresh cup.
+                        </p>
+                    </div>
+                </div>
+                <div class="coffee-text-big">
+                    We put the<br>spotlight<br>on Coffee Brent
+                </div>
+                <div class="coffee-content">
+                    <div class="hero-right">
+                        <p>
+                            In the bustling streets of Pasig City, Elaine took a brave first step by opening a small
+                            coffee cart.
+                            With only a few team members and a heart full of determination,
+                            she started serving comforting classics — hot coffees, iced brews,
+                            and her early signature blends.
+                        </p>
+                        <img src="CSS/img/coffee pic.jpg" class="coffee-img">
+                    </div>
+                    <div class="hero-left">
+                        <img src="CSS/img/barista.jpg" class="coffee-img">
+                        <p>
+                            She poured her heart into every cup, making sure each one carried the
+                            same love and sincerity she felt at home. For Elaine, it wasn’t just
+                            about selling coffee; it was about creating moments — those quiet little
+                            pauses in the day where people could breathe, smile, and feel cared for.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div id="homepage" class="page">
+        <div class="container">
+            <div class="introduction">
+                <a href="#menu" class="cta-button">See our Menu</a>
+                <div class="welcome">
+                    <p>Welcome to</p>
+                    <p class="brand">Coffee Brent!</p>
+                    <p class="price">₱89.00</p>
+                    <p class="story">From a small cart in Pasig to your favorite sip!<br>Explore our story, menu, and
+                        community.</p>
+                </div>
+                <input type="radio" name="drink" id="chocolate-feature" hidden checked>
+                <input type="radio" name="drink" id="matcha-feature" hidden>
+                <input type="radio" name="drink" id="strawberry-feature" hidden>
+                <div class="drinks-display">
+                    <label class="drink-card" for="chocolate-feature">
+                        <div class="rectangle one"></div>
+                        <img src="CSS/img/Chocolate.png" class="img-drink">
+                        <p class="desc-drink">Chocolate<br>₱89.00</p>
+                    </label>
+                    <label class="drink-card" for="matcha-feature">
+                        <div class="rectangle two"></div>
+                        <img src="CSS/img/Matcha.png" class="img-drink">
+                        <p class="desc-drink">Matcha<br>₱89.00</p>
+                    </label>
+                    <label class="drink-card" for="strawberry-feature">
+                        <div class="rectangle three"></div>
+                        <img src="CSS/img/Strawberry.png" class="img-drink">
+                        <p class="desc-drink">Strawberry<br>₱89.00</p>
+                    </label>
+                </div>
+                <div class="colored-circles">
+                    <img src="CSS/img/browncircle.png" class="circles brown-circle">
+                    <img src="CSS/img/greencircle.png" class="circles green-circle">
+                    <img src="CSS/img/redcircle.png" class="circles red-circle">
+                </div>
+                <img src="CSS/img/Coffeebeans.png" class="beans">
+                <div class="drinks-featured">
+                    <img src="CSS/img/Chocolate.png" class="feature chocolate-featured">
+                    <img src="CSS/img/Matcha.png" class="feature matcha-featured">
+                    <img src="CSS/img/Strawberry.png" class="feature strawberry-featured">
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial_title">
+                    <h2>Customer<br>Review</h2>
+                    <img src="CSS/img/spanishlattedesign.png" class="latte_design">
+                </div>
+                <div class="testimonial_desc">
+                    <p>"The Spanish Latte is very<br>delicious that every cup feels<br>like home. I highly
+                        recommend<br>this if you like good coffee!"</p>
+                </div>
+                <img src="CSS/img/line.png" class="horizontal_line">
+                <div class="white_border">
+                    <p>4.9/5.0 ☆</p>
+                </div>
+                <img src="CSS/img/customer.png" class="customer_img">
+                <a href="#about" class="cta-button">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Coffee Brent | All rights reserved</p>
+            <a href="https://www.facebook.com/share/1Eet3nesjB/"><img src="CSS/img/Facebook_icon.png"
+                    alt="Facebook"></a> <a href="https://www.instagram.com/coffee.brent?igsh=MTB2ejQwdDBoaGR2Ng=="><img
+                    src="CSS/img/Instagram_icon.png" alt="Instagram"></a> <a
+                href="https://vm.tiktok.com/ZSHcEp85X3ckJ-pfkrs/"><img src="CSS/img/Tiktok_icon.png" alt="Tiktok"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
